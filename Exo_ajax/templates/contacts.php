@@ -1,0 +1,12 @@
+<?php
+//Liste des contacts
+
+$contactList = 
+[
+    [ 'firstName' => 'Tom',       'phone' => '0102030405' ],
+    [ 'firstName' => 'Joana',     'phone' => '0102233445' ],
+    [ 'firstName' => 'Catherine', 'phone' => '0605455548' ]
+];
+
+?>
+
