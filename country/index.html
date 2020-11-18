@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #align{
+            display: flex;
+            justify-content: space-around;
+        }
+        #align div{
+            width: 40%;
+        }
+        tr, th{
+            border: 1px solid black;
+        }
+        hr{
+            margin: 3rem 0;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Je découvre l'AJAX</h1>
+    <ul></ul>
+    <div id="align">
+        <div>
+            <h2>Il y a <span id="nbEn"></span> pays qui parlent anglais</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Capitale</th>
+                        <th>Monnaie</th>
+                        <th>Population</th>
+                    </tr>
+                </thead>
+                <tbody id="countriesEn">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Il y a <span id="nbFr"></span> pays qui parlent français</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Capitale</th>
+                        <th>Monnaie</th>
+                        <th>Population</th>
+                    </tr>
+                </thead>
+                <tbody id="countriesFr">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <form>
+        <select name="country" id=""></select>
+        <button>Afficher les informations</button>
+    </form>
+    <div id="countryInfos">
+        <h2>Nom: <span id="name"></span></h2>
+        <h3>Capital: <span id="capital"></span></h3>
+        <p>Population: <span id="population"></span></p>
+        <p>Region: <span id="region"></span></p>
+        <p><img src="" alt=""></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="country.js"></script>
+</body>
+</html>

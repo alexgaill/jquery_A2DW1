@@ -1,0 +1,75 @@
+<html>
+	<head>
+        <meta charset="utf8">
+		<style>
+			form{
+				border: 1px solid black;
+				padding: 8px;
+			}
+
+			select{
+				text-transform: capitalize;
+			}
+
+			.urgent{
+				color: red;
+			}
+	
+			.faible{
+				color: green;
+			}
+			.prio{
+				text-transform: uppercase;
+			}
+
+			ul li p{
+				display: none;
+			}
+
+			ul li:hover p{
+				display: inline;
+			}
+
+			input:checked + label{
+				text-decoration: line-through;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Todolist</h1>
+		
+		<form id="tasks">
+            <ul>
+
+            </ul>
+            <button id="deleteAll">Supprimer les tâches</button>
+            <button id="deleteSome">Supprimer les tâches sélectionnées</button>
+		</form>
+
+
+		<form id="addTask">
+			<p>
+				Titre <input type="text" name="titre">
+			</p>
+			<p>
+				Description <input type="text" name="desc"> 
+			</p>
+			<p>				
+				<input type="radio" name="urgence" value="faible"> Faible
+			</p>
+			<p>
+				<input type="radio" name="urgence" value="normale" checked> Normale
+			</p>
+			<p>
+				<input type="radio" name="urgence" value="urgent"> Urgent
+			</p>
+			<p>	
+				Date limite : 
+                <input type="date" name="date" id="date">
+			</p>
+			<button id="sendData">Ajouter tâche</button>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+	</body>
+</html>
