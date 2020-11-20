@@ -12,5 +12,5 @@ $movies =
     [ 'title' => "Qu'est ce qu'on a fait au bon Dieu ?", 'duration' => 114, 'cover' => 'bon-dieu.jpg'          ],
     [ 'title' => 'Grand Budapest Hotel',                 'duration' => 128, 'cover' => 'budapest-hotel.jpg'    ]
 ];
-
+echo json_encode($movies);
 ?>
