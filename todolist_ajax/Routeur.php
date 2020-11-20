@@ -1,7 +1,9 @@
 <?php
 
 require "File.php";
+require "Chat.php";
 $file = new File();
+$chat = new Chat();
 switch ($_GET["function"]) {
     case 'saveTask':
         $file->saveTask($_POST);
@@ -14,6 +16,12 @@ switch ($_GET["function"]) {
         break;
     case 'deleteSome':
         $file->deleteSome($_POST);
+        break;
+    case 'save':
+        $chat->saveMessage($_POST);
+        break;
+    case 'get':
+        $chat->getMessages();
         break;
     
     default:
